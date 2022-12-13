@@ -1,0 +1,30 @@
+<%- include('partials/_header') %> 
+<main id="main-section">
+    <div class="container">
+       <div class="box-nav d-flex justify-between">
+             <a href="/add-user" class="border-shadow">
+               <span class="text-gradient"><i class="fa-solid fa-user-plus"></i>Add User</span>
+             </a>
+       </div>
+       <form action="/" method="POST">
+           <table class="table">
+               <thead class="thead-dark">
+                    <tr>
+                       <th>ID</th>
+                       <th>Name</th>
+                       <th>Email</th>
+                       <th>Address</th>
+                       <th>Gender</th>
+                       <th>Status</th>
+                       <th>Action</th>
+                    </tr>
+               </thead>
+               <tbody>
+                 <%- include('partials/_show') %> 
+               </tbody>
+           </table>
+       </form>
+       
+    </div>
+</main>
+<%- include('partials/_footer') %> 
